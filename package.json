@@ -18,7 +18,7 @@
   },
   "main": "dist/lib.js",
   "scripts": {
-    "test": "jest --coverage --detectOpenHandles --testPathPattern='tests/.*\\.spec\\.ts'",
+    "test": "jest --coverage --detectOpenHandles --testPathPattern='test/.*\\.spec\\.ts'",
     "build": "node_modules/typescript/bin/tsc --project ./",
     "lint": "eslint --ext .ts src/",
     "lint:fix": "eslint --ext .ts src/ --fix"
