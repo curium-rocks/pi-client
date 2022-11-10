@@ -31,3 +31,20 @@ export interface RealtimeAPI extends EventEmitter {
    */
   removeFilter(filter: string): void
 }
+export class PiholeRealtimeAPI extends EventEmitter implements RealtimeAPI {
+  removeActionFilter (action: Action): void {
+    throw new Error('Method not implemented.')
+  }
+
+  addActionFilter (action: Action): void {
+    throw new Error('Method not implemented.')
+  }
+
+  addFilter (filter: string): void {
+    throw new Error('Method not implemented.')
+  }
+
+  removeFilter (filter: string): void {
+    throw new Error('Method not implemented.')
+  }
+}
